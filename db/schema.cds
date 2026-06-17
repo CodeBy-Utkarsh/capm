@@ -28,7 +28,7 @@ entity Products : cuid, managed {
   description : String(255);
   price       : Decimal(10,2);
   currency    : Currency;
-  stock       : Integer;
+  stock       : Integer default 5;
   minStock    : Integer;
   rating      : Decimal(2,1);
   supplier    : Association to Suppliers;
